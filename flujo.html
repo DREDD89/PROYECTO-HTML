@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interacción Cliente-Servidor</title>
+    <title>FLUJO DE CONEXION</title>
+    <link rel="stylesheet" href="style.css">
     <style>
-        body {
+         body {
             font-family: 'Arial', sans-serif;
             background-color: #f8f8f8;
             color: #333;
@@ -24,8 +25,33 @@
             margin-top: 10px;
         }
 
-        p {
-            line-height: 1.6;
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            animation: colorChange 5s infinite alternate; /* Animación de cambio de color */
+        }
+
+        @keyframes colorChange {
+            from {
+                background-color: #3498db;
+                color: white;
+            }
+            to {
+                background-color: #e74c3c;
+                color: white;
+            }
+        }
+
+        th, td {
+            padding: 10px;
+            border: 2px solid #3498db;
+            text-align: left;
+        }
+
+        th {
+            background-color: #3498db;
+            color: white;
         }
 
         .flowchart {
@@ -45,25 +71,36 @@
 <body>
     <h2>Interacción y Flujo de Datos en la Arquitectura Cliente-Servidor</h2>
 
-    <p>La interacción entre el cliente y el servidor en la arquitectura cliente-servidor es un proceso fundamental que se lleva a cabo a través de la red, permitiendo la comunicación eficiente entre ambas entidades. Aquí hay más detalles sobre este flujo de datos:</p>
-
-    <h3>Envío de Solicitudes:</h3>
-    <p>Cuando el usuario realiza una acción en el cliente, como hacer clic en un botón o enviar un formulario, se genera una solicitud. Esta solicitud contiene información sobre la acción realizada y puede incluir datos que el servidor necesita para procesar la petición.</p>
-
-    <h3>Protocolos de Comunicación:</h3>
-    <p>La comunicación entre el cliente y el servidor se basa en protocolos de comunicación estándar como HTTP (Hypertext Transfer Protocol), HTTPS (HTTP Secure), TCP/IP (Transmission Control Protocol/Internet Protocol) o UDP (User Datagram Protocol). Estos protocolos definen las reglas para el intercambio de datos entre el cliente y el servidor.</p>
-
-    <h3>Procesamiento en el Servidor:</h3>
-    <p>Una vez que el servidor recibe la solicitud, procesa la información contenida en ella. Esto puede implicar realizar operaciones, acceder a bases de datos, ejecutar lógica de negocio y cualquier otra tarea necesaria para completar la solicitud.</p>
-
-    <h3>Generación de Respuesta:</h3>
-    <p>Después de procesar la solicitud, el servidor genera una respuesta que contiene los resultados de la operación solicitada o los datos requeridos. Esta respuesta se estructura de acuerdo con el protocolo de comunicación y puede incluir información en formato HTML, JSON, XML u otros formatos dependiendo de la aplicación.</p>
-
-    <h3>Envío de Respuesta al Cliente:</h3>
-    <p>La respuesta generada por el servidor se envía de vuelta al cliente a través de la red. Nuevamente, se utilizan los protocolos de comunicación para garantizar la integridad y la seguridad de la transmisión.</p>
-
-    <h3>Procesamiento en el Cliente:</h3>
-    <p>Una vez que el cliente recibe la respuesta, procede a procesar la información y actualizar la interfaz de usuario según sea necesario. Esto puede implicar la renderización de una nueva página web, la actualización de datos en una aplicación o cualquier otro cambio visual o funcional.</p>
+    <table>
+        <tr>
+            <th>Etapa</th>
+            <th>Descripción</th>
+        </tr>
+        <tr>
+            <td><h3>Envío de Solicitudes</h3></td>
+            <td><p>Cuando el usuario realiza una acción en el cliente, como hacer clic en un botón o enviar un formulario, se genera una solicitud. Esta solicitud contiene información sobre la acción realizada y puede incluir datos que el servidor necesita para procesar la petición.</p></td>
+        </tr>
+        <tr>
+            <td><h3>Protocolos de Comunicación</h3></td>
+            <td><p>La comunicación entre el cliente y el servidor se basa en protocolos de comunicación estándar como HTTP (Hypertext Transfer Protocol), HTTPS (HTTP Secure), TCP/IP (Transmission Control Protocol/Internet Protocol) o UDP (User Datagram Protocol). Estos protocolos definen las reglas para el intercambio de datos entre el cliente y el servidor.</p></td>
+        </tr>
+        <tr>
+            <td><h3>Procesamiento en el Servidor</h3></td>
+            <td><p>Una vez que el servidor recibe la solicitud, procesa la información contenida en ella. Esto puede implicar realizar operaciones, acceder a bases de datos, ejecutar lógica de negocio y cualquier otra tarea necesaria para completar la solicitud.</p></td>
+        </tr>
+        <tr>
+            <td><h3>Generación de Respuesta</h3></td>
+            <td><p>Después de procesar la solicitud, el servidor genera una respuesta que contiene los resultados de la operación solicitada o los datos requeridos. Esta respuesta se estructura de acuerdo con el protocolo de comunicación y puede incluir información en formato HTML, JSON, XML u otros formatos dependiendo de la aplicación.</p></td>
+        </tr>
+        <tr>
+            <td><h3>Envío de Respuesta al Cliente</h3></td>
+            <td><p>La respuesta generada por el servidor se envía de vuelta al cliente a través de la red. Nuevamente, se utilizan los protocolos de comunicación para garantizar la integridad y la seguridad de la transmisión.</p></td>
+        </tr>
+        <tr>
+            <td><h3>Procesamiento en el Cliente</h3></td>
+            <td><p>Una vez que el cliente recibe la respuesta, procede a procesar la información y actualizar la interfaz de usuario según sea necesario. Esto puede implicar la renderización de una nueva página web, la actualización de datos en una aplicación o cualquier otro cambio visual o funcional.</p></td>
+        </tr>
+    </table>
 
     <div class="flowchart">
         <img src="INSERTA_LA_RUTA_DE_LA_IMAGEN" alt="Flujo de Datos Cliente-Servidor">
