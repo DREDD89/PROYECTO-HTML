@@ -9,19 +9,28 @@ h1 {
     margin-bottom: 20px; 
     text-align: center;
 }
-h1, h2{
+h2{
     color: #007BFF;
 }
 p {
     line-height: 1.5;
 }
 a{
-    color: #007BFF;
+    color: #44b1f0;
+    font-family: fantasy;
     text-decoration: none;
+    
+
 }
 a:hover{
     text-decoration: underline;
 }
-div h2{
-    
+
+h2{
+    position: relative;
+    display: inline-block;
+    padding: 10px; 
+}
+h4{
+    text-align: justify;
 }
