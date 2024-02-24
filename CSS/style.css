@@ -40,13 +40,13 @@ a {
     color: #44b1f0;
     font-family: fantasy;
     text-decoration: none;
-    transition: color 0.3s ease-in-out; /* Transición para cambiar el color de <a> */
+    transition: color 0.3s ease-in-out;
 }
 
 a:hover {
     text-decoration: underline;
     color: #0056b3; /* Cambia el color al pasar el mouse */
-    animation: bounce 0.5s ease-in-out; /* Animación para <a> al pasar el mouse */
+    animation: bounce 0.5s ease-in-out; 
 }
 
 @keyframes bounce {
